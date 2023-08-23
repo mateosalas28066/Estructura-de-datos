@@ -1,0 +1,40 @@
+public class ListNode<T> {
+
+    /* atributos de un nodo */
+    T data;
+    ListNode next;
+    ListNode prev;
+
+
+    /* métodos de un nodo */
+    public ListNode(T data) {
+         this.data = data;
+         this.prev = null;
+         this.next = null;
+    }
+
+    /* métodos get/set (consulta, modificación) */
+
+    public T getData() {
+         return data;
+    }
+
+    public void setData(T data) {
+         this.data = data;
+    }
+
+    public ListNode getNext() {
+         return next;
+    }
+
+    public void setNext(ListNode next) {
+         this.next = next;
+    }
+    public ListNode getPrev() {
+   	 return prev;
+    }
+   	 public void setPrev(ListNode prev) {
+   		 this.prev = null;
+   	 
+    }
+}
